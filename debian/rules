@@ -1,0 +1,19 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ --buildsystem=makefile
+
+override_dh_auto_build:
+	make
+
+override_dh_shlibdeps:
+	dh_shlibdeps -- --ignore-missing-info
+
+override_dh_auto_clean:
+	dh_auto_clean
+	rm -rf -- Source/Documentation/html/
+	rm -rf -- Bin/Intermediate
+	rm -rf -- Bin/*-Release
+	rm -rf -- ThirdParty/PSCommon/XnLib/Bin/*-Release
+	rm -rf -- ThirdParty/PSCommon/XnLib/Bin/Intermediate
+

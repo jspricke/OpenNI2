@@ -1,0 +1,35 @@
+From: Hauke Wintjen <hwintjen@rimpl-consulting.de>
+Date: Fri, 29 Mar 2013 21:16:28 +0100
+Subject: Change path of config files to /etc/openni2
+
+---
+ Source/Drivers/PS1080/Sensor/XnSensor.cpp |    2 +-
+ Source/Tools/NiViewer/NiViewer.cpp        |    2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/Source/Drivers/PS1080/Sensor/XnSensor.cpp b/Source/Drivers/PS1080/Sensor/XnSensor.cpp
+index 4f0362e..085b5b0 100644
+--- a/Source/Drivers/PS1080/Sensor/XnSensor.cpp
++++ b/Source/Drivers/PS1080/Sensor/XnSensor.cpp
+@@ -39,7 +39,7 @@
+ #define XN_SENSOR_FRAME_SYNC_MAX_DIFF					3
+ #define XN_SENSOR_DEFAULT_CLOSE_STREAMS_ON_SHUTDOWN		TRUE
+ #define XN_SENSOR_DEFAULT_HOST_TIMESTAMPS				FALSE
+-#define XN_GLOBAL_CONFIG_FILE_NAME						"./PS1080.ini"
++#define XN_GLOBAL_CONFIG_FILE_NAME						"/etc/openni2/PS1080.ini"
+ 
+ #define FRAME_SYNC_MAX_FRAME_TIME_DIFF					3000
+ 
+diff --git a/Source/Tools/NiViewer/NiViewer.cpp b/Source/Tools/NiViewer/NiViewer.cpp
+index 2ba10cc..b47bfed 100644
+--- a/Source/Tools/NiViewer/NiViewer.cpp
++++ b/Source/Tools/NiViewer/NiViewer.cpp
+@@ -96,7 +96,7 @@ using namespace glh;
+ // --------------------------------
+ // Defines
+ // --------------------------------
+-#define SAMPLE_XML_PATH "../../../../Data/SamplesConfig.xml"
++#define SAMPLE_XML_PATH "/etc/openni2/SamplesConfig.xml"
+ 
+ // --------------------------------
+ // Types

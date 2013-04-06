@@ -1,0 +1,4 @@
+0001-Add-SONAME-to-libraries.patch
+0002-Change-path-of-config-files-to-etc-openni2.patch
+0003-Use-system-wide-libjpeg.patch
+0005-change-default-ni-drivers-path.patch

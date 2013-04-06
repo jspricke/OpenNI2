@@ -1,0 +1,2 @@
+Include/* usr/include/openni2/
+debian/libopenni2.pc usr/lib/pkgconfig
