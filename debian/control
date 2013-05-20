@@ -34,9 +34,7 @@ Package: openni2-utils
 Section: utils
 Architecture: any
 Depends: ${shlibs:Depends},
-         ${misc:Depends},
-	 libgl1-mesa-glx,
-	 libopenni2
+         ${misc:Depends}
 Description: debug and test utilities OpenNI2 framework
  OpenNI2 is a framework for getting data to support 'Natural Interaction',
  i.e. skeleton tracking, gesture tracking, and similar ways of getting data
