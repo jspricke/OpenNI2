@@ -6,8 +6,6 @@ Subject: Disable SSE
  ThirdParty/PSCommon/BuildSystem/Platform.x86 |    4 +---
  1 file changed, 1 insertion(+), 3 deletions(-)
 
-diff --git a/ThirdParty/PSCommon/BuildSystem/Platform.x86 b/ThirdParty/PSCommon/BuildSystem/Platform.x86
-index 04dd480..0dcf3c9 100644
 --- a/ThirdParty/PSCommon/BuildSystem/Platform.x86
 +++ b/ThirdParty/PSCommon/BuildSystem/Platform.x86
 @@ -2,7 +2,7 @@
@@ -19,7 +17,7 @@ index 04dd480..0dcf3c9 100644
  endif
  
  ifeq ("$(OSTYPE)","Darwin")
-@@ -19,7 +19,5 @@ else
+@@ -19,7 +19,5 @@
  		ifeq ($(SSSE3_ENABLED), 1)
  			CFLAGS += -mssse3
  		endif

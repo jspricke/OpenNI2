@@ -76,7 +76,7 @@ Subject: Use system wide libjpeg
  endif
 --- a/Source/Drivers/PS1080/Makefile
 +++ b/Source/Drivers/PS1080/Makefile
-@@ -14,8 +14,7 @@
+@@ -16,8 +16,7 @@
  	DriverImpl/*.cpp\
  	Formats/*.cpp	\
  	Include/*.cpp	\
@@ -86,12 +86,12 @@ Subject: Use system wide libjpeg
  
  
  ifeq ("$(OSTYPE)","Darwin")
-@@ -27,7 +26,7 @@
- LIB_NAME = PS1080
+@@ -30,7 +29,7 @@
  
  LIB_DIRS += ../../../ThirdParty/PSCommon/XnLib/Bin/$(PLATFORM)-$(CFG)
--USED_LIBS = XnLib dl pthread
-+USED_LIBS = XnLib dl pthread jpeg
+ LIB_DIRS += $(BIN_DIR)/$(PLATFORM)-$(CFG)
+-USED_LIBS = XnLib dl pthread DepthUtils
++USED_LIBS = XnLib dl pthread DepthUtils jpeg
  ifneq ("$(OSTYPE)","Darwin")
-         USED_LIBS += rt usb-1.0
+         USED_LIBS += rt usb-1.0 udev
  else

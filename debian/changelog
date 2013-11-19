@@ -1,4 +1,9 @@
-openni2 (2.1.0.4-1ubuntu1~1.gbp2a4158) UNRELEASED; urgency=low
+openni2 (2.2.0.33-1) UNRELEASED; urgency=low
+
+  * Merged upstream to 2.2.0.33
+  * Refresh patches
+
+ -- Hauke Wintjen <hwintjen@rimpl-consulting.de>  Fri, 29 Mar 2013 23:14:11 +010openni2 (2.1.0.4-1ubuntu1~1.gbp2a4158) UNRELEASED; urgency=low
 
   ** SNAPSHOT build @2a4158ba551d1f7de2549afc4400bd4110641cce **
 
